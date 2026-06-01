@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "AceDeck",
+    "slug": "acedeck",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D1117"
+    },
+    "ios": {
+      "bundleIdentifier": "com.acedeck.pos",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIFileSharingEnabled": true,
+        "LSSupportsOpeningDocumentsInPlace": true,
+        "NSCameraUsageDescription": "Take photos for your profile or scan TCG card barcodes",
+        "NSPhotoLibraryUsageDescription": "Choose a profile photo for your store account."
+      }
+    },
+    "android": {
+      "package": "com.acedeck.pos",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": ["android.permission.READ_MEDIA_IMAGES", "android.permission.RECORD_AUDIO"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D1117"
+      }
+    },
+    "plugins": [
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow AceDeck to access your photos to set your profile picture.",
+          "cameraPermission": "Allow AceDeck to use the camera for your profile photo or card scanning."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2cf15853-649c-4511-aa95-d5b52952396d"
+      }
+    },
+    "owner": "ate_orange"
+  }
+}

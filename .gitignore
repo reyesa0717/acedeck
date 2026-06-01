@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Environment — NEVER commit this
+.env
+.env.local
+.env.production
+
+# Native builds
+ios/
+android/
+
+# EAS
+.easignore
+
+# OS
+.DS_Store
+*.log
+
+# Google service account key — keep private
+google-service-account.json
+.claude/
