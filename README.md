@@ -131,27 +131,6 @@ npm run build:ios-preview         # internal iOS build
 npm run build:production          # both platforms, store-ready
 ```
 
-## File overview
-
-Frontend screens (`frontend/src/screens/`):
-
-- `POSScreen.js` — search/scan a card, show prices, log a sale or acquisition.
-- `ImportScreen.js` — import a Collectr CSV into the catalog.
-- `HistoryScreen.js` — browse transactions, view details, export CSV.
-- `AccountScreen.js`, `AuthScreen.js`, `GuestScreen.js`, `PinManagerScreen.js`, `CustomerBrowseScreen.js`, `CardDetailScreen.js` — auth, settings, and customer-facing flows.
-
-Frontend components (`frontend/src/components/`):
-
-- `PricePanel`, `GradePicker`, `PriceHistoryModal`, `InteractiveHistorySparkline`, `VariantPickerModal` — pricing UI.
-- `DrawerModal`, `ScanModal`, `CatalogPickerModal`, `CartModal` — main POS modals.
-- `CatalogImage`, `PokeImage`, `Paginator`, `CardSkeleton` — shared UI.
-
-Backend services (`backend/src/services/`):
-
-- `scrydex.js` — Scrydex client: search, prices, images, offline cache.
-- `storage.js` — AsyncStorage wrapper for catalog, transactions, acquisitions.
-- `csv.js` — Collectr CSV import and transaction/acquisition export.
-
 ## Common issues
 
 **`expo: command not found`** — you skipped `npm install`, or you're in the wrong directory.
